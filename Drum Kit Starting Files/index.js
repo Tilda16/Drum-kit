@@ -3,5 +3,5 @@ function handleClick(){
 }
 let clickForAll = document.querySelectorAll("button");
 function allButtons() {
-  clickForAll.forEach(button).addEventListener("click", handleClick);
+  clickForAll.forEach(.drum).addEventListener("click", handleClick);
 }
