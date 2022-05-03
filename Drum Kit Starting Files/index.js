@@ -7,4 +7,4 @@ for(i = 0; i<numberOfButtons; i++){
   }
 }
 
-let audio = new audio(sounds/tom-1.mp3);
+let audio = new Audio(sounds/crash.mp3);
