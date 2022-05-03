@@ -7,5 +7,3 @@ for(i = 0; i<numberOfButtons; i++){
     audio.play;
   }
 }
-
-let audio = new Audio(sounds/crash.mp3);
