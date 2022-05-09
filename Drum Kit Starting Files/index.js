@@ -3,7 +3,7 @@ let audio = new Audio('sounds/tom-1.mp3');
 
 for(i = 0; i<numberOfButtons; i++){
   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-    let buttonInnerHTML = this.innerHTML;
+    let buttonInnerHTML = this.textContent;
 switch (buttonInnerHTML) {
   case "w":
     let crash = new Audio("sounds/crash.mp3");
