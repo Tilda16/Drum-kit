@@ -10,27 +10,27 @@ switch (buttonInnerHTML) {
     audio.play;
     break;
   case "a":
-    let crash = new Audio("sounds/kick-base.mp3");
+    let kickBase = new Audio("sounds/kick-base.mp3");
     audio.play;
     break;
   case "s":
-    let crash = new Audio("sounds/snare.mp3");
+    let snare = new Audio("sounds/snare.mp3");
     audio.play;
     break;
   case "d":
-    let crash = new Audio("sounds/tom-1.mp3");
+    let tom1 = new Audio("sounds/tom-1.mp3");
     audio.play;
     break;
   case "j":
-    let crash = new Audio("sounds/tom-2.mp3");
+    let tom2 = new Audio("sounds/tom-2.mp3");
     audio.play;
     break;
   case "k":
-    let crash = new Audio("sounds/tom-3.mp3");
+    let tom3 = new Audio("sounds/tom-3.mp3");
     audio.play;
     break;
   case "l":
-    let crash = new Audio("sounds/tom-4.mp3");
+    let tom4 = new Audio("sounds/tom-4.mp3");
     audio.play;
     break;
   default: console.log(buttonInnerHTML);
