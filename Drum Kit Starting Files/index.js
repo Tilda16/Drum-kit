@@ -10,8 +10,8 @@ switch (buttonInnerHTML) {
     crash.play();
     break;
   case "a":
-    let kickBase = new Audio("sounds/kick-base.mp3");
-    kickBase.play();
+    let kickBass = new Audio("sounds/kick-bass.mp3");
+    kickBass.play();
     break;
   case "s":
     let snare = new Audio("sounds/snare.mp3");
