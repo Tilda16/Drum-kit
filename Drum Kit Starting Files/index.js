@@ -3,7 +3,15 @@ let numberOfButtons = document.querySelectorAll(".drum").length;
 for(i = 0; i<numberOfButtons; i++){
   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
     let buttonInnerHTML = this.textContent;
-switch (buttonInnerHTML) {
+makeSound(buttonInnerHTML);
+    });
+
+    document.addEventListener("keydown", function(event){
+      makeSound(event.key);
+    });
+function makeSound(key){
+
+switch (key) {
   case "w":
     let crash = new Audio("sounds/crash.mp3");
     crash.play();
@@ -35,9 +43,5 @@ switch (buttonInnerHTML) {
   default: console.log(buttonInnerHTML);
 
 }
-});
 }
-
-document.addEventListener("keydown", function(){
-  alert("Key was pressed");
-});
+}
