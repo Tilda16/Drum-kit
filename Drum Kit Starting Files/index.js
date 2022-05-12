@@ -5,11 +5,13 @@ for(i = 0; i<numberOfButtons; i++){
     let buttonInnerHTML = this.textContent;
     makeSound(buttonInnerHTML);
     buttonAnimation(buttonInnerHTML);
+    buttonAnimatinAway(buttonInnerHTML);
     });
 
     document.addEventListener("keydown", function(event){
       makeSound(event.key);
       buttonAnimation(event.key);
+      buttonAnimatinAway(event.key);
     });
 function makeSound(key){
 
@@ -50,4 +52,8 @@ switch (key) {
 function buttonAnimation(currentKey){
   let activeButton = document.querySelector("." + currentKey );
   activeButton.classList.add("pressed");
+}
+function buttonAnimatinAway(pressedKey){
+  let pressedButton = document.querySelector("." + currentKey);
+  pressedButton.classList.remove("pressed");
 }
