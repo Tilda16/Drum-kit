@@ -8,6 +8,7 @@ makeSound(buttonInnerHTML);
 
     document.addEventListener("keydown", function(event){
       makeSound(event.key);
+
     });
 function makeSound(key){
 
@@ -44,4 +45,8 @@ switch (key) {
 
 }
 }
+}
+function buttonAnimation(currentKey){
+  let activeButton = document.querySelector("." + currentKey).classList.add("pressed");
+
 }
