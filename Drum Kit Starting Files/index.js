@@ -48,6 +48,6 @@ switch (key) {
 }
 }
 function buttonAnimation(currentKey){
-  let activeButton = document.querySelector("." + currentKey).classList.add("pressed");
-
+  let activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
 }
