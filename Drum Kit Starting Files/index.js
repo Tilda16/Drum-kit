@@ -47,7 +47,7 @@ switch (key) {
 }
 }
 }
-function buttonAnimation(event.key){
-  let activeButton = document.querySelector("." + event.key);
+function buttonAnimation(buttonInnerHTML){
+  let activeButton = document.querySelector("." + buttonInnerHTML );
   activeButton.classList.add("pressed");
 }
