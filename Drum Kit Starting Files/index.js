@@ -47,7 +47,7 @@ switch (key) {
 }
 }
 }
-function buttonAnimation(currentKey){
-  let activeButton = document.querySelector("." + currentKey);
+function buttonAnimation(key){
+  let activeButton = document.querySelector("." + key);
   activeButton.classList.add("pressed");
 }
