@@ -52,8 +52,8 @@ switch (key) {
 function buttonAnimation(currentKey){
   let activeButton = document.querySelector("." + currentKey );
   activeButton.classList.add("pressed");
-}
-function buttonAnimatinAway(pressedKey){
-  let pressedButton = document.querySelector("." + currentKey);
-  pressedButton.classList.remove("pressed");
+
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }
